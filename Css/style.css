@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+html, body {
+    background-color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+/*Xu ly header*/
+.header {
+    background-color: transparent;
+    font-weight: 700px;
+    border-bottom: 1px solid #a9a8a8;
+    padding: 12px 25px;
+    position: absolute;
+    width: 100%;
+    color: white;
+    z-index: 10;
+}
+.header_content {
+    display: flex;
+    justify-content: space-around;
+}
+.header .header_content .logo {
+    margin-left: -100px;
+    font-size: 30px;
+    font-weight: 700;
+    width: 50%;
+    padding-left: 245px;
+    
+}
+.header .header_content .logo a {
+    text-decoration: none;
+    color: white;
+}
+.header ul li {
+    list-style: none;
+    display: inline;
+    padding-right: 70px;
+    font-weight: 550;
+    font-size: 17px;
+    width: 50%;
+}
+.header ul li a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.9s;
+}
+.header ul li a:hover {
+    color: red;
+    font-size: 19px;
+}
+.list {
+    margin-top: 10px;
+}
+/*Ket thuc header*/
+/*Xu ly carousel*/
+.carousel {
+    background-image: url(../images/home_slider.jpg);
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.carousel_content {
+    text-align: center; 
+    margin-top: 280px;
+}
+.carousel_content p {
+    color: white;
+    margin-bottom: 8px;
+    font-size: 25px;
+}
+.carousel_content h1 {
+    font-size: 50px;
+    color: white;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+.carousel_content button {
+    background-color: red;
+    padding: 15px 20px;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.7s;
+}
+.carousel_content button:hover {
+    font-size: 20px;
+    padding: 20px 25px;
+}
+.carousel_content button a {
+    color: white;
+    text-decoration: none;
+}
+.carousel .down {
+    position: absolute;
+    margin: 0 auto;
+    margin-top: 530px;
+    font-size: 30px;
+    color: white;
+    animation: muiten;
+    animation-timing-function: ease-out;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes muiten {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(80px);
+    }
+    70% {
+        transform: translateY(85px);
+    }
+    100% {
+        transform: translateY(70px);
+    }
+}
+.carousel .arrow {
+    border-bottom: 15px solid white;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    bottom: -46px;
+    position: absolute;
+}
+/*Ket thuc carousel*/
+/*Xu ly showcase*/

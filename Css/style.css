@@ -57,6 +57,7 @@ html, body {
     margin-top: 10px;
 }
 /*Ket thuc header*/
+
 /*Xu ly carousel*/
 .carousel {
     background-image: url(../images/home_slider.jpg);
@@ -133,6 +134,7 @@ html, body {
     position: absolute;
 }
 /*Ket thuc carousel*/
+
 /*Xu ly showcase*/
 .showcase .showcase_introduce {
     text-align: center;
@@ -199,4 +201,78 @@ html, body {
     font-size: 20px;
     font-weight: 700;
     bottom: 25px;
+}
+/*Ket thuc showcase*/
+
+/*Xu ly articles*/
+.articles {
+    background-color: #f3f3f3;
+    padding: 100px 0;
+    margin-top: 100px;
+}
+.articles_introduce {
+    text-align: center;
+}
+.articles_introduce .p1 {
+    color: #808080;
+}
+.articles_introduce .p2 {
+    font-size: 25px;
+    font-weight: 900;
+}
+.articles_list {
+    margin-top: 60px;
+}
+.articles_item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.articles_item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    filter: grayscale(50%) contrast(50%);
+    cursor: pointer;
+}
+.metro1 {
+    grid-row: 1/ span 2;
+    grid-column: 1/ span 2;
+}
+.metro10 {
+    grid-row: 3/ span 2;
+    grid-column: 3/ span 2;
+}
+.articles_item img:hover {
+    filter: grayscale(0%) contrast(100%);
+    transition: 1s;
+}
+/*Ket thuc articles*/
+
+/*Xu ly experience*/
+.experience {
+    background-image: url(../images/bussiness_img_1.jpg);
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+    background-attachment: fixed;
+}
+.experience_introduce {
+    text-align: center;
+    margin-top: -27px;
+    color: white;
+    margin-bottom: 30px;
+}
+.experience_introduce .p2 {
+    font-size: 25px;
+    font-weight: 900;
+}
+.experience_media video {
+    padding: 1px;
+    width: 100%;
+    height: 700px;
 }
